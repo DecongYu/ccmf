@@ -28,11 +28,11 @@ for web in webs:
     except:
         publish_date = None
 
-    print(publish_date)
+    print(publish_date) # easy to monitor in the console
 
 
     dates_published.append(publish_date) # append the date list
 
 df['publish_date'] = dates_published # add the publish_date column
 
-df.to_csv('new_ccmf.csv')
+df.to_csv('new_ccmf.csv') # write the search results back into csv
